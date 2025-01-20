@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PersonaGrid
 //
-//  Created by Furkan Can Baytemur on 19.01.2025.
+//  Created by Furkan Can Baytemur on 20.01.2025.
 //
 
 import UIKit

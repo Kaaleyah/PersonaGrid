@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		5186F97F2D3E30E4004744FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5186F91D2D3D7662004744FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5186F9242D3D7662004744FE;
+			remoteInfo = PersonaGrid;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5186F9252D3D7662004744FE /* PersonaGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonaGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5186F97B2D3E30E4004744FE /* PersonaGridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonaGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = PersonaGrid;
 			sourceTree = "<group>";
 		};
+		5186F97C2D3E30E4004744FE /* PersonaGridTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PersonaGridTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5186F9222D3D7662004744FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5186F9782D3E30E4004744FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				5186F9272D3D7662004744FE /* PersonaGrid */,
+				5186F97C2D3E30E4004744FE /* PersonaGridTests */,
 				5186F9262D3D7662004744FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				5186F9252D3D7662004744FE /* PersonaGrid.app */,
+				5186F97B2D3E30E4004744FE /* PersonaGridTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = 5186F9252D3D7662004744FE /* PersonaGrid.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5186F97A2D3E30E4004744FE /* PersonaGridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5186F9812D3E30E4004744FE /* Build configuration list for PBXNativeTarget "PersonaGridTests" */;
+			buildPhases = (
+				5186F9772D3E30E4004744FE /* Sources */,
+				5186F9782D3E30E4004744FE /* Frameworks */,
+				5186F9792D3E30E4004744FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5186F9802D3E30E4004744FE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5186F97C2D3E30E4004744FE /* PersonaGridTests */,
+			);
+			name = PersonaGridTests;
+			packageProductDependencies = (
+			);
+			productName = PersonaGridTests;
+			productReference = 5186F97B2D3E30E4004744FE /* PersonaGridTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					5186F9242D3D7662004744FE = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					5186F97A2D3E30E4004744FE = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 5186F9242D3D7662004744FE;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				5186F9242D3D7662004744FE /* PersonaGrid */,
+				5186F97A2D3E30E4004744FE /* PersonaGridTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5186F9232D3D7662004744FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5186F9792D3E30E4004744FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5186F9772D3E30E4004744FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5186F9802D3E30E4004744FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5186F9242D3D7662004744FE /* PersonaGrid */;
+			targetProxy = 5186F97F2D3E30E4004744FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5186F9392D3D7663004744FE /* Debug */ = {
@@ -143,8 +218,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVYSLR2KJN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PersonaGrid/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -152,6 +230,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -159,6 +238,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.furkancan.PersonaGrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -170,8 +250,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVYSLR2KJN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PersonaGrid/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -179,6 +262,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -186,6 +270,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.furkancan.PersonaGrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,6 +396,42 @@
 			};
 			name = Release;
 		};
+		5186F9822D3E30E4004744FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVYSLR2KJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkancan.PersonaGridTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonaGrid.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PersonaGrid";
+			};
+			name = Debug;
+		};
+		5186F9832D3E30E4004744FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVYSLR2KJN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkancan.PersonaGridTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersonaGrid.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PersonaGrid";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -328,6 +449,15 @@
 			buildConfigurations = (
 				5186F9392D3D7663004744FE /* Debug */,
 				5186F93A2D3D7663004744FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5186F9812D3E30E4004744FE /* Build configuration list for PBXNativeTarget "PersonaGridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5186F9822D3E30E4004744FE /* Debug */,
+				5186F9832D3E30E4004744FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
