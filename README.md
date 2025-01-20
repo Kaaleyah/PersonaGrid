@@ -18,11 +18,11 @@ The app has two screens:
 
 ## Screenshots
 
-1. **User List Screen**  
-   ![User List Screen](screenshots/userListScreen.png)
+### User List Screen and User Details Screen
 
-2. **User Details Screen**  
-   ![User Details Screen](screenshots/userDetailsScreen.png)
+| User List Screen  | User Details Screen |
+|-------------------|---------------------|
+| ![User List Screen](screenshots/userListScreen.png) | ![User Details Screen](screenshots/userDetailsScreen.png) |
 
 ## Architecture
 
